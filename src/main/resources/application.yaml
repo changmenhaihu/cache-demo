@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: cache-demo
+    active: local
+  # 公共jackson统一配置，本地、线上共用
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+    serialization:
+      write-dates-as-timestamps: false
+
+# 日志公共配置
+logging:
+  level:
+    root: info
+    org.springframework: warn
